@@ -1,5 +1,7 @@
 import React from "react";
 import wgxImage from "./assets/webgenix.png";
+import Projects from "./components/Projects";
+import Uiprojects from "./components/Uiprojects";
 
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
             <li><a href="#home" className="hover:text-gray-200">Home</a></li>
             <li><a href="#about" className="hover:text-gray-200">About</a></li>
             <li><a href="#services" className="hover:text-gray-200">Services</a></li>
+            <li><a href="#projects" className="hover:text-gray-200">Projects</a></li>
             <li><a href="#expertise" className="hover:text-gray-200">Expertise</a></li>
             <li><a href="#values" className="hover:text-gray-200">Values</a></li>
             <li><a href="#contact" className="hover:text-gray-200">Contact</a></li>
@@ -139,6 +142,9 @@ const App = () => {
         { title: "Project Consultancy", icon: "📊" },
         { title: "UI/UX Design", icon: "🎨" },
         { title: "MVP Launch Services", icon: "🚀" },
+        { title: "Data Science", icon: "🤖" },
+        { title: "Graphics with AI", icon: "🧠" },
+        { title: "Email Marketing", icon: "📧" },
       ].map((service, i) => (
         <div
           key={i}
@@ -153,6 +159,9 @@ const App = () => {
     </div>
   </div>
 </section>
+
+<Projects />
+<Uiprojects />
 
       {/* Expertise Section */}
      <section id="expertise" className="py-20 bg-gray-100">
@@ -303,8 +312,8 @@ const App = () => {
             <ul className="space-y-2">
               <li>Web Development</li>
               <li>UI/UX Design</li>
+              <li>Data Science</li>
               <li>Brand Strategy</li>
-              <li>SEO & Optimization</li>
             </ul>
           </div>
         </div>
