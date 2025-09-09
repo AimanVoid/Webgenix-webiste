@@ -110,3 +110,32 @@
   font-weight: 600;
   border-radius: 8px;
 }
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 20px; /* kam padding on small screens */
+  }
+
+  .project-img {
+    height: 150px; /* thoda chhota image taa ke adjust ho jaye */
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 30px 15px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* ek card per row on very small screens */
+  }
+}
