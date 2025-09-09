@@ -317,7 +317,7 @@ const App = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           <div className="ml-3">
             <h4 className="font-bold mb-3">CONTACT</h4>
-            <p>info@webgenix.com</p>
+            <p>webgenix11@gmail.com</p>
             <p>+92 327 8421172</p>
           </div>
           <div  className="ml-3">
