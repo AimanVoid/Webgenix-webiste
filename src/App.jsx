@@ -318,7 +318,7 @@ const App = () => {
           <div className="ml-3">
             <h4 className="font-bold mb-3">CONTACT</h4>
             <p>info@webgenix.com</p>
-            <p>+92 334 9251936</p>
+            <p>+92 327 8421172</p>
           </div>
           <div  className="ml-3">
             <h4 className="font-bold mb-3">LINKS</h4>
