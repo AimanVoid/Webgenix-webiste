@@ -1,17 +1,20 @@
-import React from "react";
 import wgxImage from "./assets/webgenix.png";
 import Projects from "./components/Projects";
 import Uiprojects from "./components/Uiprojects";
+import React, { useState } from "react";
 
 
 const App = () => {
+   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="font-sans bg-white text-gray-800">
       {/* Navbar */}
       <nav className="bg-blue-700 text-white fixed top-0 left-0 w-full z-50 shadow">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           <h1 className="text-2xl font-bold">WebGenix</h1>
-          <ul className="flex space-x-6">
+
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex space-x-6">
             <li><a href="#home" className="hover:text-gray-200">Home</a></li>
             <li><a href="#about" className="hover:text-gray-200">About</a></li>
             <li><a href="#services" className="hover:text-gray-200">Services</a></li>
@@ -20,7 +23,30 @@ const App = () => {
             <li><a href="#values" className="hover:text-gray-200">Values</a></li>
             <li><a href="#contact" className="hover:text-gray-200">Contact</a></li>
           </ul>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-2xl focus:outline-none"
+            >
+              {isOpen ? "✖" : "☰"}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <ul className="md:hidden flex flex-col items-center space-y-4 bg-blue-600 py-6">
+            <li><a href="#home" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Home</a></li>
+            <li><a href="#about" onClick={() => setIsOpen(false)} className="hover:text-gray-200">About</a></li>
+            <li><a href="#services" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Services</a></li>
+            <li><a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Projects</a></li>
+            <li><a href="#expertise" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Expertise</a></li>
+            <li><a href="#values" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Values</a></li>
+            <li><a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-gray-200">Contact</a></li>
+          </ul>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -38,7 +64,7 @@ const App = () => {
       </div>
 
       {/* Title & Tagline */}
-      <h1 className="text-5xl font-extrabold mb-4">WebGenix</h1>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">WebGenix</h1>
       <p className="text-lg md:text-xl mb-4 font-medium">
         "Learn, Build & Grow with Digital Innovation"
       </p>
@@ -77,7 +103,7 @@ const App = () => {
             <img
               src={wgxImage}
               alt="Webgenix Team"
-              className="rounded-2xl shadow-lg w-full object-cover"
+              className="h-auto rounded-2xl shadow-lg w-full object-cover"
             />
             <div className="absolute inset-0 bg-[rgba(16,108,194,0.35)] rounded-2xl"></div>
           </div>
@@ -134,7 +160,7 @@ const App = () => {
       What We Offer
     </h3>
 
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {[
         { title: "Custom Project Development", icon: "💻" },
         { title: "Ready-made Solutions", icon: "⚡" },
@@ -172,7 +198,7 @@ const App = () => {
       to deliver both learning and professional solutions across multiple IT domains.
     </p>
 
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         {
           title: "Web Development",
@@ -256,15 +282,15 @@ const App = () => {
   </p>
 
   <div className="flex flex-col md:flex-row justify-center gap-6 mb-10">
-    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-64 hover:shadow-lg transition">
+    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
       <p className="font-semibold text-lg mb-1">📧 Email</p>
       <p className="text-gray-700">info@webgenix.com</p>
     </div>
-    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-64 hover:shadow-lg transition">
+    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
       <p className="font-semibold text-lg mb-1">📞 Phone</p>
       <p className="text-gray-700">+92 333 2186309</p>
     </div>
-    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-64 hover:shadow-lg transition">
+    <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
       <p className="font-semibold text-lg mb-1">💬 WhatsApp</p>
       <p className="text-gray-700">+92 333 2186309</p>
     </div>
@@ -281,13 +307,13 @@ const App = () => {
 
       {/* Footer */}
       <footer className="bg-blue-900 text-white py-10">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="ml-3">
             <h4 className="font-bold mb-3">CONTACT</h4>
             <p>info@webgenix.com</p>
             <p>+92 334 9251936</p>
           </div>
-          <div>
+          <div  className="ml-3">
             <h4 className="font-bold mb-3">LINKS</h4>
             <ul className="space-y-2">
               <li>
@@ -307,7 +333,7 @@ const App = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="ml-3">
             <h4 className="font-bold mb-3">SERVICES</h4>
             <ul className="space-y-2">
               <li>Web Development</li>

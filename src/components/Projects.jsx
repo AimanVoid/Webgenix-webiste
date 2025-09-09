@@ -9,8 +9,8 @@ const Projects = () => {
       <h2 className="section-title">Projects</h2>
       <div className="projects-container">
         {projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <img src={project.image} alt={project.title} className="project-img" />
+          <div key={project.id} className="project-card bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col">
+            <img src={project.image} alt={project.title} className="project-img rounded-lg mb-4 object-cover w-full h-40" />
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <ul className="tech-list">
