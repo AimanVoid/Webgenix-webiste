@@ -2,7 +2,7 @@ import foodpandaImg from "../assets/foodpanda.png";
 import veloxaImg from "../assets/veloxa.png";
 import TaskTrackerImg from "../assets/TaskTracker.png";
 import SpacelyticsImg from "../assets/Spacelytics.png";
-import DigitalClockImg from "../assets/digitalclock.png";
+import DigitalClockImg from "../assets/bakraboss.png";
 import TodoImg from "../assets/todo.png";
 import ScientificCalculatorImg from "../assets/ScienticCalculator.png";
 import darazImg from "../assets/Daraz.png"
@@ -50,12 +50,12 @@ const projects = [
   },
   {
     id: 5,
-    title: "Digital Clock",
-    description: "Digital Clock shows real-time time using HTML, CSS, and JavaScript.",
+    title: "Bakra Boss",
+    description: "Bakra Boss – React platform for easy livestock trading.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: DigitalClockImg,
-    github: "https://github.com/AimanVoid/JS-Digital-Clock",
-    live: "https://aimanvoid.github.io/JS-Digital-Clock/"
+    github: "https://github.com/sy518/Bakraboss",
+    live: "https://bakraboss.vercel.app/"
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ const projects = [
     description: "A React-based card layout showcasing majestic lion images using map().",
     technologies: ["React", "TailwindCSS", "JavaScript"],
     image: roarImg,
-    github: "https://github.com/AimanVoid/JS-Digital-Clock", //samana lion cards react app
+    github: "https://github.com/sy518/react-array-Card", //samana lion cards react app
     live: "https://react-array-card.vercel.app/"
   },
   {
@@ -99,7 +99,7 @@ const projects = [
     description: "A fun gaming website to explore and play games.",
     technologies: ["HTML", "CSS", "JavaSript"],
     image: gamewebImg,
-    github: "https://github.com/AimanVoid/todo-app", // laiba game web code
+    github: "https://github.com/laiba112-bot/gaming-web", // laiba game web code
     live: "https://gentle-cheesecake-beb1c0.netlify.app/"
   },
   {
@@ -108,7 +108,7 @@ const projects = [
     description: "A simple counter app with increment, decrement, and reset features.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: counterImg,
-    github: "https://github.com/AimanVoid/Scientific-Calculator-", //samana counter app code
+    github: "https://github.com/sy518/react-counter", //samana counter app code
     live: "https://react-counter-five-phi.vercel.app/"
   },
   {
@@ -117,7 +117,7 @@ const projects = [
     description: "High-yield savings with 4.00% APY, no fees, and instant access.",
     technologies: ["HTML", "CSS", "Bootstrap"],
     image: lagacyImg,
-    github: "https://github.com/AimanVoid/Daraz?tab=readme-ov-file", //laiba mbil app code
+    github: "https://github.com/laiba112-bot/laiba-lagycy", //laiba mbil app code
     live: "https://bejewelled-monstera-ff5724.netlify.app/"
   }
 ];

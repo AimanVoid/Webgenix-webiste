@@ -284,15 +284,22 @@ const App = () => {
   <div className="flex flex-col md:flex-row justify-center gap-6 mb-10">
     <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
       <p className="font-semibold text-lg mb-1">📧 Email</p>
-      <p className="text-gray-700">info@webgenix.com</p>
+      <p className="text-gray-700">webgenix11@gmail.com</p>
     </div>
     <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
       <p className="font-semibold text-lg mb-1">📞 Phone</p>
-      <p className="text-gray-700">+92 333 2186309</p>
+      <p className="text-gray-700">+92 327 8421172</p>
     </div>
     <div className="bg-white text-blue-700 p-6 rounded-xl shadow w-full sm:w-64 hover:shadow-lg transition">
-      <p className="font-semibold text-lg mb-1">💬 WhatsApp</p>
-      <p className="text-gray-700">+92 333 2186309</p>
+       <p className="font-semibold text-lg mb-1">💬 WhatsApp</p>
+  <a 
+    href="https://chat.whatsapp.com/CDzuWDq2KIXIrlBYzjduK2" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-gray-700 hover:underline"
+  >
+    Join WhatsApp Group
+  </a>
     </div>
   </div>
 
